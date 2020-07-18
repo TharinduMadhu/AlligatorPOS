@@ -12,29 +12,19 @@ public class MainFormController {
     public AnchorPane root;
 
     public void btnAddCustomer_OnAction(ActionEvent actionEvent) throws IOException {
-        /*
-        To do:
-        Create and add ManageCustomerForm.fxml
-         */
-
-//        Scene customerForm = new Scene(FXMLLoader.load(getClass().getResource("/view/")));
-//        Stage primaryStage = (Stage) (root.getScene().getWindow());
-//        primaryStage.setScene(customerForm);
-//        primaryStage.centerOnScreen();
-//        primaryStage.show();
+        Scene customerForm = new Scene(FXMLLoader.load(getClass().getResource("/view/ManageCustomer.fxml")));
+        Stage primaryStage = (Stage) (root.getScene().getWindow());
+        primaryStage.setScene(customerForm);
+        primaryStage.centerOnScreen();
+        primaryStage.show();
     }
 
     public void btnPlaceOrder_OnAction(ActionEvent actionEvent) throws IOException {
-        /*
-        To do:
-        Create and add PlaceOrderForm.fxml
-         */
-
-//        Scene placeOrderForm = new Scene(FXMLLoader.load(getClass().getResource("/view/")));
-//        Stage primaryStage = (Stage) (root.getScene().getWindow());
-//        primaryStage.setScene(placeOrderForm);
-//        primaryStage.centerOnScreen();
-//        primaryStage.show();
+        Scene placeOrderForm = new Scene(FXMLLoader.load(getClass().getResource("/view/placeOrder.fxml")));
+        Stage primaryStage = (Stage) (root.getScene().getWindow());
+        primaryStage.setScene(placeOrderForm);
+        primaryStage.centerOnScreen();
+        primaryStage.show();
     }
 
     public void btnAddItem_OnAction(ActionEvent actionEvent) throws IOException {
